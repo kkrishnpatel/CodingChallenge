@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css"
+      integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ=="
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      form > * {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <form data-form>
+        <label for="search">
+          Find a cocktail by name
+        </label>
+        <input id="search" name="search" type="search" />
+        <button type="submit">Search</button>
+      </form>
+
+      <pre>
+			  <code class="language-json" data-output></code>
+		  </pre>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js"
+      integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/index.ts"></script>
+  </body>
+</html>
